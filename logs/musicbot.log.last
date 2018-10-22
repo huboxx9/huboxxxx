@@ -1,0 +1,430 @@
+[281.232357025] 2018-10-22 16:32:41,379 - INFO - launcher: Starting sanity checks
+[281.232357025] 2018-10-22 16:32:41,379 - INFO - launcher: Checking for Python 3.5+
+[281.232357025] 2018-10-22 16:32:41,379 - INFO - launcher: Checking console encoding
+[281.232357025] 2018-10-22 16:32:41,379 - INFO - launcher: Setting console encoding to UTF-8
+[281.232357025] 2018-10-22 16:32:41,379 - INFO - launcher: Ensuring we're in the right environment
+[281.232357025] 2018-10-22 16:32:41,379 - INFO - launcher: Adding local bins/ folder to path
+[5161.562919617] 2018-10-22 16:32:46,259 - INFO - launcher: Required checks passed.
+[5162.765264511] 2018-10-22 16:32:46,261 - INFO - launcher: Optional checks passed.
+[5163.340806961] 2018-10-22 16:32:46,261 - INFO - launcher: Moving old musicbot log
+
+######################### PRE-RUN SANITY CHECKS PASSED #########################
+
+[17.4584724903106689] 2018-10-22 16:32:58,556 - WARNING - musicbot.config | In config.py::MainThread(6384), line 113 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
+[17.4584724903106689] 2018-10-22 16:32:58,556 - INFO - musicbot.config | In config.py::MainThread(6384), line 124 in run_checks: Using i18n: config/i18n/en.json
+[17.4584724903106689] 2018-10-22 16:32:58,556 - DEBUG - musicbot.json | In json.py::MainThread(6384), line 8 in __init__: Init JSON obj with config/i18n/en.json
+[17.5209696292877197] 2018-10-22 16:32:58,619 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 223 in _setup_logging: Set logging level to INFO
+[17.5209696292877197] 2018-10-22 16:32:58,619 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 83 in __init__: Starting MusicBot 1.9.8_1
+[17.5209696292877197] 2018-10-22 16:32:58,619 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 89 in __init__: Loaded autoplaylist with 2531 entries
+[21.8750724792480469] 2018-10-22 16:33:02,973 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 913 in on_ready: Connection established, ready to go.
+[21.8750724792480469] 2018-10-22 16:33:02,973 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 334 in _cache_app_info: Caching app info
+[22.0523998737335205] 2018-10-22 16:33:03,150 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 735 in _scheck_ensure_env: Ensuring data folders exist
+[22.0679683685302734] 2018-10-22 16:33:03,166 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 751 in _scheck_server_permissions: Checking server permissions
+[22.0679683685302734] 2018-10-22 16:33:03,166 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 755 in _scheck_autoplaylist: Auditing autoplaylist
+[22.0679683685302734] 2018-10-22 16:33:03,166 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 759 in _scheck_configs: Validating config
+[22.0679683685302734] 2018-10-22 16:33:03,166 - DEBUG - musicbot.config | In config.py::MainThread(6384), line 213 in async_validate: Validating options...
+[22.0679683685302734] 2018-10-22 16:33:03,166 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 762 in _scheck_configs: Validating permissions config
+[22.0679683685302734] 2018-10-22 16:33:03,166 - DEBUG - musicbot.permissions | In permissions.py::MainThread(6384), line 65 in async_validate: Validating permissions...
+[22.0679683685302734] 2018-10-22 16:33:03,166 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 930 in on_ready: Connected: 503916003336650766/HuboxxIMG#5293
+[22.0679683685302734] 2018-10-22 16:33:03,166 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 938 in on_ready: Owner:     310867995926986753/huboxx#4466
+
+[22.0679683685302734] 2018-10-22 16:33:03,166 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 941 in on_ready: Guild List:
+[22.0679683685302734] 2018-10-22 16:33:03,166 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 944 in on_ready:  - Aion 8B
+[22.0836184024810791] 2018-10-22 16:33:03,181 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 990 in on_ready: Not bound to any text channels
+[22.0836184024810791] 2018-10-22 16:33:03,181 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 1016 in on_ready: Not autojoining any voice channels
+[37.2195258140563965] 2018-10-22 16:33:18,317 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[43.6425223350524902] 2018-10-22 16:33:24,740 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $summon
+[44.5907862186431885] 2018-10-22 16:33:25,689 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 1864 in cmd_summon: Joining Aion 8B/OVERWATCH
+[44.6067776679992676] 2018-10-22 16:33:25,705 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 505 in on_player_stop: Running on_player_stop
+[71.0935828685760498] 2018-10-22 16:33:52,191 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $play boruto op 1
+[72.8298537731170654] 2018-10-22 16:33:53,928 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 1351 in cmd_play: {'_type': 'url', 'url': 'ytsearch:boruto op 1', 'ie_key': None, 'extractor': 'generic', 'webpage_url': 'boruto op 1', 'webpage_url_basename': 'boruto op 1', 'extractor_key': 'Generic'}
+[77.5249621868133545] 2018-10-22 16:33:58,623 - DEBUG - musicbot.entry | In entry.py::MainThread(6384), line 56 in get_ready_future: Created future for None
+[77.5279614925384521] 2018-10-22 16:33:58,626 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 586 in on_player_entry_added: Running on_player_entry_added
+[77.5299596786499023] 2018-10-22 16:33:58,628 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 671 in serialize_queue: Serializing queue for 495165453962969099
+[77.5479507446289062] 2018-10-22 16:33:58,646 - INFO - musicbot.entry | In entry.py::MainThread(6384), line 285 in _really_download: Download started: https://www.youtube.com/watch?v=9prtl1aVcdM
+[79.2057263851165771] 2018-10-22 16:34:00,304 - INFO - musicbot.entry | In entry.py::MainThread(6384), line 295 in _really_download: Download complete: https://www.youtube.com/watch?v=9prtl1aVcdM
+[79.5237376689910889] 2018-10-22 16:34:00,622 - DEBUG - musicbot.entry | In entry.py::MainThread(6384), line 56 in get_ready_future: Created future for audio_cache\youtube-9prtl1aVcdM-Boruto_Naruto_Next_Generations_Opening_1.webm
+[79.5237376689910889] 2018-10-22 16:34:00,622 - FFMPEG - musicbot.player | In player.py::MainThread(6384), line 276 in _play: Creating player with options: -nostdin -vn audio_cache\youtube-9prtl1aVcdM-Boruto_Naruto_Next_Generations_Opening_1.webm
+[80.0864980220794678] 2018-10-22 16:34:01,184 - DEBUG - musicbot.player | In player.py::MainThread(6384), line 287 in _play: Playing <discord.player.PCMVolumeTransformer object at 0x05F973F0> using <discord.voice_client.VoiceClient object at 0x049B6790>
+[80.0885148048400879] 2018-10-22 16:34:01,186 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 452 in on_player_play: Running on_player_play
+[80.0885148048400879] 2018-10-22 16:34:01,186 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 671 in serialize_queue: Serializing queue for 495165453962969099
+[85.7229609489440918] 2018-10-22 16:34:06,821 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $skip
+[85.9805524349212646] 2018-10-22 16:34:07,078 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 509 in on_player_finished_playing: Running on_player_finished_playing
+[85.9825522899627686] 2018-10-22 16:34:07,080 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 671 in serialize_queue: Serializing queue for 495165453962969099
+[85.9945449829101562] 2018-10-22 16:34:07,092 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 505 in on_player_stop: Running on_player_stop
+[94.5564005374908447] 2018-10-22 16:34:15,654 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $disconnect
+[94.7625629901885986] 2018-10-22 16:34:15,860 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[96.8063616752624512] 2018-10-22 16:34:17,904 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[175.6101539134979248] 2018-10-22 16:35:36,708 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[194.1176702976226807] 2018-10-22 16:35:55,216 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $help
+[302.3797836303710938] 2018-10-22 16:37:43,478 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[441.2003517150878906] 2018-10-22 16:40:02,298 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2840 in on_guild_join: Bot has been joined guild: LeagueOfLegends/GRACZE
+[441.2143387794494629] 2018-10-22 16:40:02,312 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 2842 in on_guild_join: Creating data folder for guild 489057043496304640
+[482.9250333309173584] 2018-10-22 16:40:44,023 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[485.2188577651977539] 2018-10-22 16:40:46,317 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[492.0493061542510986] 2018-10-22 16:40:53,147 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[494.1029322147369385] 2018-10-22 16:40:55,201 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[495.0224847793579102] 2018-10-22 16:40:56,120 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 455117792010567710/f3rnv2#1978: $help
+[495.4260642528533936] 2018-10-22 16:40:56,524 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[498.7806136608123779] 2018-10-22 16:40:59,878 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[501.2140183448791504] 2018-10-22 16:41:02,312 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $summon
+[534.3530790805816650] 2018-10-22 16:41:35,451 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $help
+[534.6351721286773682] 2018-10-22 16:41:35,733 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[538.2179994583129883] 2018-10-22 16:41:39,316 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[549.4184148311614990] 2018-10-22 16:41:50,516 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.2220118045806885] 2018-10-22 16:42:02,320 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 2750 in on_message: Exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2705, in on_message
+    response = await handler(**handler_kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 1856, in cmd_summon
+    player = await self.get_player(author.voice.channel, create=True, deserialize=self.config.persistent_queue)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 413, in get_player
+    voice_client = await self.get_voice_client(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 378, in get_voice_client
+    return await channel.connect(timeout=60, reconnect=True)
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\abc.py", line 987, in connect
+    raise e # re-raise
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\abc.py", line 980, in connect
+    await voice.connect(reconnect=reconnect)
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\voice_client.py", line 202, in connect
+    await self.start_handshake()
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\voice_client.py", line 147, in start_handshake
+    raise e
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\voice_client.py", line 144, in start_handshake
+    await asyncio.wait_for(self._handshake_complete.wait(), timeout=self.timeout, loop=self.loop)
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\asyncio\tasks.py", line 423, in wait_for
+    raise futures.TimeoutError()
+concurrent.futures._base.TimeoutError
+[561.4090306758880615] 2018-10-22 16:42:02,507 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4130270481109619] 2018-10-22 16:42:02,511 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4240274429321289] 2018-10-22 16:42:02,522 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4285237789154053] 2018-10-22 16:42:02,526 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4435167312622070] 2018-10-22 16:42:02,541 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4515113830566406] 2018-10-22 16:42:02,549 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4625053405761719] 2018-10-22 16:42:02,560 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4754970073699951] 2018-10-22 16:42:02,573 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4785010814666748] 2018-10-22 16:42:02,576 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.4954855442047119] 2018-10-22 16:42:02,593 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[561.5144762992858887] 2018-10-22 16:42:02,612 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[609.9608857631683350] 2018-10-22 16:42:51,059 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2846 in on_guild_remove: Bot has been removed from guild: LeagueOfLegends/GRACZE
+[609.9688835144042969] 2018-10-22 16:42:51,067 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 2847 in on_guild_remove: Updated guild list:
+[609.9688835144042969] 2018-10-22 16:42:51,067 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 2848 in <listcomp>:  - Aion 8B
+[618.0288968086242676] 2018-10-22 16:42:59,127 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2840 in on_guild_join: Bot has been joined guild: LeagueOfLegends/GRACZE
+[618.0458884239196777] 2018-10-22 16:42:59,144 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 2842 in on_guild_join: Creating data folder for guild 489057043496304640
+[682.4307129383087158] 2018-10-22 16:44:03,529 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $summon
+[700.7556626796722412] 2018-10-22 16:44:21,854 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $help
+[701.0296344757080078] 2018-10-22 16:44:22,127 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[742.4216916561126709] 2018-10-22 16:45:03,520 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 2750 in on_message: Exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2705, in on_message
+    response = await handler(**handler_kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 1856, in cmd_summon
+    player = await self.get_player(author.voice.channel, create=True, deserialize=self.config.persistent_queue)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 413, in get_player
+    voice_client = await self.get_voice_client(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 378, in get_voice_client
+    return await channel.connect(timeout=60, reconnect=True)
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\abc.py", line 987, in connect
+    raise e # re-raise
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\abc.py", line 980, in connect
+    await voice.connect(reconnect=reconnect)
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\voice_client.py", line 202, in connect
+    await self.start_handshake()
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\voice_client.py", line 147, in start_handshake
+    raise e
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\voice_client.py", line 144, in start_handshake
+    await asyncio.wait_for(self._handshake_complete.wait(), timeout=self.timeout, loop=self.loop)
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\asyncio\tasks.py", line 423, in wait_for
+    raise futures.TimeoutError()
+concurrent.futures._base.TimeoutError
+[746.3134031295776367] 2018-10-22 16:45:07,411 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[750.3631820678710938] 2018-10-22 16:45:11,461 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[755.3284235000610352] 2018-10-22 16:45:16,426 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 455117792010567710/f3rnv2#1978: $summon
+[755.3354196548461914] 2018-10-22 16:45:16,433 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 2727 in on_message: Error in summon: PermissionsError: You don't have permission to use that command.
+Reason: This command is not enabled for your group (Default).
+Traceback (most recent call last):
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2680, in on_message
+    expire_in=20)
+musicbot.exceptions.PermissionsError: This command is not enabled for your group (Default).
+[755.6112599372863770] 2018-10-22 16:45:16,709 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[769.0244956016540527] 2018-10-22 16:45:30,122 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[776.1915850639343262] 2018-10-22 16:45:37,289 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $summon
+[796.5923843383789062] 2018-10-22 16:45:57,690 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $summon
+[796.6313621997833252] 2018-10-22 16:45:57,729 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 1864 in cmd_summon: Joining LeagueOfLegends/GRACZE/MAX2 ●
+[796.9502534866333008] 2018-10-22 16:45:58,048 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[797.9411180019378662] 2018-10-22 16:45:59,039 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 1864 in cmd_summon: Joining LeagueOfLegends/GRACZE/MAX2 ●
+[797.9561095237731934] 2018-10-22 16:45:59,054 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 505 in on_player_stop: Running on_player_stop
+[798.2299528121948242] 2018-10-22 16:45:59,328 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[832.1859517097473145] 2018-10-22 16:46:33,284 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $play bombsite a
+[833.2911911010742188] 2018-10-22 16:46:34,389 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 1351 in cmd_play: {'_type': 'url', 'url': 'ytsearch:bombsite a', 'ie_key': None, 'extractor': 'generic', 'webpage_url': 'bombsite a', 'webpage_url_basename': 'bombsite a', 'extractor_key': 'Generic'}
+[842.5465400218963623] 2018-10-22 16:46:43,644 - DEBUG - musicbot.entry | In entry.py::MainThread(6384), line 56 in get_ready_future: Created future for None
+[842.5515360832214355] 2018-10-22 16:46:43,649 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 586 in on_player_entry_added: Running on_player_entry_added
+[842.5515360832214355] 2018-10-22 16:46:43,649 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 671 in serialize_queue: Serializing queue for 489057043496304640
+[842.6005079746246338] 2018-10-22 16:46:43,698 - INFO - musicbot.entry | In entry.py::MainThread(6384), line 285 in _really_download: Download started: https://www.youtube.com/watch?v=WxevjJBOO0o
+[843.0437929630279541] 2018-10-22 16:46:44,142 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[844.5365056991577148] 2018-10-22 16:46:45,634 - DEBUG - musicbot.entry | In entry.py::MainThread(6384), line 56 in get_ready_future: Created future for None
+[873.5240683555603027] 2018-10-22 16:47:14,622 - INFO - musicbot.entry | In entry.py::MainThread(6384), line 295 in _really_download: Download complete: https://www.youtube.com/watch?v=WxevjJBOO0o
+[873.5350644588470459] 2018-10-22 16:47:14,633 - FFMPEG - musicbot.player | In player.py::MainThread(6384), line 276 in _play: Creating player with options: -nostdin -vn audio_cache\youtube-WxevjJBOO0o-REMO_GIMPSON_MAMIKO_-_Bombsite_A.webm
+[873.5410592555999756] 2018-10-22 16:47:14,639 - DEBUG - musicbot.player | In player.py::MainThread(6384), line 287 in _play: Playing <discord.player.PCMVolumeTransformer object at 0x05F97AD0> using <discord.voice_client.VoiceClient object at 0x0369A8D0>
+[873.5450561046600342] 2018-10-22 16:47:14,643 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 452 in on_player_play: Running on_player_play
+[873.5450561046600342] 2018-10-22 16:47:14,643 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 671 in serialize_queue: Serializing queue for 489057043496304640
+[932.1764373779296875] 2018-10-22 16:48:13,274 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $skip
+[932.2523937225341797] 2018-10-22 16:48:13,350 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 509 in on_player_finished_playing: Running on_player_finished_playing
+[932.2523937225341797] 2018-10-22 16:48:13,350 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 671 in serialize_queue: Serializing queue for 489057043496304640
+[932.2623870372772217] 2018-10-22 16:48:13,360 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 505 in on_player_stop: Running on_player_stop
+[932.4473512172698975] 2018-10-22 16:48:13,545 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[937.9944329261779785] 2018-10-22 16:48:19,092 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $disconnect
+[938.1769058704376221] 2018-10-22 16:48:19,275 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[938.2118682861328125] 2018-10-22 16:48:19,310 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[939.6568608283996582] 2018-10-22 16:48:20,755 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 901 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\Gocha i Tadzio\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 225, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2796, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 425, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use $summon to summon it to your voice channel.
+[943.9369487762451172] 2018-10-22 16:48:25,035 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $summon
+[944.4652442932128906] 2018-10-22 16:48:25,563 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 695 in deserialize_queue: Deserializing queue for 489057043496304640
+[945.1078720092773438] 2018-10-22 16:48:26,206 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 417 in get_player: Created player via deserialization for guild 489057043496304640 with 0 entries
+[945.1078720092773438] 2018-10-22 16:48:26,206 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 1864 in cmd_summon: Joining LeagueOfLegends/GRACZE/MAX5 ●
+[945.1128699779510498] 2018-10-22 16:48:26,211 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 505 in on_player_stop: Running on_player_stop
+[945.4514374732971191] 2018-10-22 16:48:26,549 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[972.3066241741180420] 2018-10-22 16:48:53,404 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 310867995926986753/huboxx#4466: $play faded
+[972.5448274612426758] 2018-10-22 16:48:53,643 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 1351 in cmd_play: {'_type': 'url', 'url': 'ytsearch:faded', 'ie_key': None, 'extractor': 'generic', 'webpage_url': 'faded', 'webpage_url_basename': 'faded', 'extractor_key': 'Generic'}
+[977.8298215866088867] 2018-10-22 16:48:58,928 - DEBUG - musicbot.entry | In entry.py::MainThread(6384), line 56 in get_ready_future: Created future for None
+[977.8328199386596680] 2018-10-22 16:48:58,931 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 586 in on_player_entry_added: Running on_player_entry_added
+[977.8338198661804199] 2018-10-22 16:48:58,932 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 671 in serialize_queue: Serializing queue for 489057043496304640
+[977.8508107662200928] 2018-10-22 16:48:58,949 - INFO - musicbot.entry | In entry.py::MainThread(6384), line 285 in _really_download: Download started: https://www.youtube.com/watch?v=60ItHLz5WEA
+[978.0766823291778564] 2018-10-22 16:48:59,175 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
+[979.8204023838043213] 2018-10-22 16:49:00,918 - DEBUG - musicbot.entry | In entry.py::MainThread(6384), line 56 in get_ready_future: Created future for None
+[982.0294334888458252] 2018-10-22 16:49:03,127 - INFO - musicbot.entry | In entry.py::MainThread(6384), line 295 in _really_download: Download complete: https://www.youtube.com/watch?v=60ItHLz5WEA
+[982.0434243679046631] 2018-10-22 16:49:03,141 - FFMPEG - musicbot.player | In player.py::MainThread(6384), line 276 in _play: Creating player with options: -nostdin -vn audio_cache\youtube-60ItHLz5WEA-Alan_Walker_-_Faded.webm
+[982.0564165115356445] 2018-10-22 16:49:03,154 - DEBUG - musicbot.player | In player.py::MainThread(6384), line 287 in _play: Playing <discord.player.PCMVolumeTransformer object at 0x06115A50> using <discord.voice_client.VoiceClient object at 0x03722670>
+[982.1403684616088867] 2018-10-22 16:49:03,238 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 452 in on_player_play: Running on_player_play
+[982.1403684616088867] 2018-10-22 16:49:03,238 - DEBUG - musicbot.bot | In bot.py::MainThread(6384), line 671 in serialize_queue: Serializing queue for 489057043496304640
+[1020.9017090797424316] 2018-10-22 16:49:42,000 - INFO - musicbot.bot | In bot.py::MainThread(6384), line 2598 in on_message: 455117792010567710/f3rnv2#1978: $disconnect
+[1020.9117052555084229] 2018-10-22 16:49:42,010 - ERROR - musicbot.bot | In bot.py::MainThread(6384), line 2727 in on_message: Error in disconnect: PermissionsError: You don't have permission to use that command.
+Reason: This command is not enabled for your group (Default).
+Traceback (most recent call last):
+  File "C:\Users\48721\Documents\MusicBot\musicbot\bot.py", line 2680, in on_message
+    expire_in=20)
+musicbot.exceptions.PermissionsError: This command is not enabled for your group (Default).
+[1021.1765522956848145] 2018-10-22 16:49:42,274 - WARNING - musicbot.bot | In bot.py::MainThread(6384), line 788 in safe_send_message: Cannot send message to "●muzyczny●", no permission
